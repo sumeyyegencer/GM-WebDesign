@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class=" container ">
+        <h1 class="display-3 text-danger text-center my-3 ">Ortalama Hesaplama </h1>
+<form class="w-50 mx-auto">
+
+    <div class="row my-3">
+        <label class="col-2 col-form-label" >1. Sınav:</label>
+        <div class="col-10">
+            <input id="sinav1" class="form-control" type="text">
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <label class="col-2 col-form-label" >2.Sınav:</label>
+        <div class="col-10">
+            <input id="sinav2" class="form-control" type="text">
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <label class="col-2 col-form-label" >3.Sınav:</label>
+        <div class="col-10">
+            <input id="sinav3" class="form-control" type="text">
+        </div>
+    </div>
+
+    
+<div class="text-center mt-3">
+    <button id="btn" type="button" onclick="ortalamaHesaplama()" class=" btn btn-warning">Ortalama Hesapla</button>
+</div>
+</form>
+
+<div class="text-center m-5" >
+    <h1 id="snc"></h1>
+</div>
+</div>
+
+
+
+<script>
+
+
+function ortalamaHesaplama()
+  {
+    
+    var s1=Number(document.getElementById("sinav1").value);
+    var s2=Number(document.getElementById("sinav2").value);
+    var s3=Number(document.getElementById("sinav3").value);
+     var ortalama=parseInt((s1+s2+s3)/3);
+   
+   var sonuc=document.getElementById("snc");
+    
+
+     if(ortalama>=50)
+     {
+        sonuc.innerText="Ortalamanız:" + ortalama + " "+ "Tebrikler,dersi geçtiniz!"
+        sonuc.style.color="green";
+     }
+
+     else{
+        sonuc.innerText="Ortalamanız:" + ortalama + " "+ "Dersi geçemediniz."
+        sonuc.style.color="red";
+     }
+
+  }
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxShadow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Crimson+Text:ital,wght@1,600&family=Edu+NSW+ACT+Foundation:wght@500&family=Kalam&family=Shantell+Sans:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+*{margin: 0;
+box-sizing: border-box;}
+        body{
+            box-sizing: border-box;
+            font-family: 'Caveat', cursive;
+            font-family: 'Crimson Text', serif;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-family: 'Kalam', cursive;
+            font-family: 'Shantell Sans', cursive;
+        }
+
+        .menü{
+            padding: 15px;
+            background-color:#485a69 ;
+            
+        }
+        .card{
+            width: 40%;
+            height: 500px;
+            margin: 35px;
+            display: inline-block;
+            border: 2px solid brown;
+            border-radius: 10px;
+            background-color:#fcefd9 ;
+            text-align: center;
+            box-shadow: 5px 5px 10px 5px gray;
+            transition: all 3s;
+            transition-delay: 2s;
+         
+    
+        }
+
+        .card:hover{
+            box-shadow: 15px 15px 20px 6px black;
+            background-color:#dae5b0 ;
+
+
+        }
+
+        .btn{
+
+         text-decoration: none;
+         background-color:#cf4d37 ;
+         color: white;
+         border: 2px solid #cf4d37;
+         border-radius: 10px;
+         padding: 10px 25px;
+         font-size: 18px;
+         display: inline-block;
+         margin-top: 25px;
+        }
+
+        .btn:hover{
+
+            color:#cf4d37;
+            background-color: white;
+            padding: 20px 35px;
+            font-size: 25px;
+        }
+
+
+        .card-body{
+            margin-top: 10px;
+            padding: 10px;
+            border-top: 1px solid #cf4d37;
+        }
+     
+        img{
+            padding: 15px;
+        }
+
+   
+
+        
+    </style>
+</head>
+<body>
+
+    <header class="menü header"><h2>Header</h2></header>
+    <main class="main-container">
+    <div class="card" id="c1">
+
+        <img src="../../Resimler/pr2.png" alt="">
+        
+
+        <div class="card-body">
+            <h4>Zeynep Ahsen Mercan</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <a class="btn" href="">Profili Gör</a>
+        </div>
+
+    </div>
+
+
+   
+    <div class="card" id="c2" >
+
+        <img src="../../Resimler/p5.png" alt="">
+        
+
+        <div class="card-body">
+            <h4>Elif Gülce Şahin</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <a class="btn" href="">Profili Gör</a>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="menü footer"><h2>Footer</h2></footer>
+</body>
+</html>

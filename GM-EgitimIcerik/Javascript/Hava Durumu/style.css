@@ -1,0 +1,30 @@
+body{
+    background-image: url("../Resimler/wp10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header h1{
+    font-size: 50px;
+    color: #6c755b;
+}
+.header input{
+    width: 100%;
+    border: 0;
+    border-bottom:2px solid #6c755b;
+    background: transparent;
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+.content{
+    color: #b76903;
+    font-size: 25px;
+}
+.sicaklik{
+    font-size: 100px;
+}
+.aciklama{
+    font-style: italic;
+}

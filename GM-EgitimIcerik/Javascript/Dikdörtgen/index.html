@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dikdörtgnin Çevre ve Alanını Hesaplama</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"> 
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-3"><span id="sekil">Dikdörtgenin</span>Çevre ve Alanını Hesaplama</h1>
+
+        <div id="sonuc" class="alert alert-info">
+
+        </div>
+    <form class="w-50">
+        <div class="form-group my-3">
+            <label class="form-label" for="sehir">Şekil Seçin</label>
+            <select class="form-control" id="mySelect" onchange="myFunction()">
+                <option value="dikdörtgen">Dikdörtgen</option>
+                <option value="ücgen">Üçgen</option>
+                <option value="kare">Kare</option>
+               
+            </select>
+        </div>
+
+        <div class="row mb-3">
+            <label class="col-2 col-form-label">Uzun Kenar:</label>
+            <div class="col-10">
+                <input class="form-control" id="uk" type="number" placeholder="Uzun Kenarı girin..." >
+            </div>
+        </div>
+
+        <div class="row">
+            <label class="col-2 col-form-label">Kısa Kenar:</label>
+            <div class="col-10">
+                <input class="form-control" id="kk" type="number" placeholder="Kısa Kenarı giriniz..." >
+            </div>
+        </div>
+
+    </form>
+
+    <button type="button" onclick="Hesapla()" class="btn btn-warning mb-5">Hesapla</button>
+    
+</div>
+
+
+
+
+   <script src="script.js"></script>
+
+</body>
+</html>

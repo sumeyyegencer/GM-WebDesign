@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ile Alan Hesaplama</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"> 
+</head>
+</head>
+<body>
+    
+    
+    <form class="form w-50 mx-auto mt-5  ">
+        <h1>Javascript Alan Hesaplama</h1>      
+        <div class="form-group w-50 my-5 ">
+            <label for="">Şekil:</label>
+            <select class="form-control my-3" id="islem" onchange="Selected()">
+                <option value="dikdörtgen">Dikdörtgen</option>
+                <option value="ucgen">Üçgen</option>
+                <option value="kare">Kare</option>
+                <option value="daire">Daire</option>
+            </select>
+    <label id="l1">Kısa Kenar : </label>
+    <input class="form-control my-3" type="text" id="s1">
+ 
+
+    <label id="l2">Uzun Kenar: </label>
+    <input class="form-control my-3" type="text" id="s2">
+
+   
+</div>
+    <button type="button" class="btn btn-success mt-3" onclick="Hesapla()" id="buton">Hesapla</button>
+</form>
+
+    <div id="sonuc"></div>
+    <script src="script.js"></script>
+</body>
+</html>

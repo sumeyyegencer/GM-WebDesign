@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+.box{
+    width: 150px;
+    height: 100px;
+    background-color: lightcoral;
+    margin-bottom: 5px;
+    
+}
+
+.box:hover{
+    width: 300px;
+
+}
+
+#b1{
+    transition: width 5s ease;
+}
+
+#b2{
+    transition: width 5s linear;
+}
+
+#b3{
+    transition: width 5s ease-in;
+}
+
+
+#b4{
+    transition: width 5s ease-out;
+}
+
+#b5{
+    transition: width 5s ease-in-out;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="box" id="b1">ease</div>
+    <div class="box" id="b2">linear</div>
+    <div class="box" id="b3">ease-in</div>
+    <div class="box" id="b4">ease-out</div>
+    <div class="box" id="b5">ease-in-out</div>
+</body>
+</html>

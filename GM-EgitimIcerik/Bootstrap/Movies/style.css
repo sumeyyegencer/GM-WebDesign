@@ -1,0 +1,14 @@
+.navbar{
+    background-color: #383E56 !important;
+}
+
+.navbar .fa-clapperboard{
+    font-size: 30px;
+
+}
+
+.carousel-control-prev-icon{
+    font-weight: 50px !important;
+    color: red !important;
+}
+
